@@ -1,0 +1,15 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "Clock+", root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="<%= is_active? (root_path) %>"> 
+          <%= link_to "Showcase", root_path %>
+        </li>
+        <li class="<%= is_active? (contact_path)%>">
+          <%= link_to "Contact Us", contact_path %>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
