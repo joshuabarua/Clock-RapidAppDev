@@ -8,16 +8,42 @@
             </div>
         </div>
     </div>
+
     <div class="wrapper">
         <div class="row2" style="color: white;">
-            <div class="col">
-                ONE
+           
+            <div class="col center-block" style="padding-top: 50%;">
+                <h5 class="sidebarKey"><i class="fas fa-circle" style="color:rgb(79, 255, 158);"></i> Business Time</h5>
+                <h5 class="sidebarKey"><i class="fas fa-circle" style="color:yellow;"></i> Business Overtime</h5> 
+                <h5 class="sidebarKey"><i class="fas fa-circle" style="color:red;"></i> Personal Time</h5> 
+                <h5 class="sidebarKey"><i class="fas fa-moon" style="color: light-grey;"></i> Sleeping Time</h5>
             </div>
-            <div class="col-5" style="background-color:#363636">
-                TWO
+
+            <div class="col-5 center-block" style="background-color:#363636">
+                 
+                   <h2> <% @london %> </h2>
+                   <h2>  </h2>
+                   <h2>   </h2>
+                   <h2> </h2>
+                   <h2> </h2>
+                   
             </div>
-            <div class="col">
-                THREE
+
+            <div class="col center-block" style="padding-top: 50%;">
+                <h5 class="sidebarKey">Colour Theme</h5>
+                <nav>
+                    <ul class="themeSelection">
+                        <li class="<%= is_active? (root_path) %>"> 
+                        <%= link_to "Black", "#" %>
+                        </li>
+                        <li class="<%= is_active? (contact_path)%>">
+                        <%= link_to "Graphite", "#" %>
+                        </li>
+                        <li class="<%= is_active? (contact_path)%>">
+                        <%= link_to "White", "#" %>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>    
     </div>
