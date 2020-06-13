@@ -4,7 +4,7 @@
         <div class="col">
             <div class="center jumbotron" style="background-color:#222; color: white; height: 200px;">
                 <h1> Clock+ </h1>
-                <h4> Clock built by Joshua Barua - s3610346@student.rmit.edu.au - Pass - Overseas Group </h4>
+                <h4> Clock built by Joshua Barua - s3610346@student.rmit.edu.au - Credit - Offshore Group </h4>
             </div>
         </div>
     </div>
@@ -20,12 +20,21 @@
             </div>
 
             <div class="col-5 center-block" style="background-color:#363636">
-                 
-                   <h2> <% @london %> </h2>
-                   <h2>  </h2>
-                   <h2>   </h2>
-                   <h2> </h2>
-                   <h2> </h2>
+            <h5 style="text-align:center; font-size:10px; font-weight: 300;"> Universal Time Coordinated: <%= @t.strftime("%H:%M")%></h5>
+                 <table style="table-layout: fixed; width:100%;">
+                    <tr class="tableRow">
+                        <th><h2> <%= @london.utc %><br><%=@t1.strftime("%:z")%>h</h2></th>
+                        <td><h2> <%= @t1.strftime("%H:%M")%><br><%= dayIsIt %><%= modeSwitcher1 %> </h2></td>
+                    </tr>
+                    <tr class="tableRow">
+                        <th> <h2> <%= @melbourne.utc %> <br> <%= @t2.strftime("%:z") %>h </h2></th>
+                        <td><h2> <%= @t2.strftime("%H:%M") %> <br><%= dayIsIt %><%= modeSwitcher2 %></h2></td>
+                    </tr>
+                    <tr class="tableRow">
+                        <th> <h2> <%= @germany.utc %> <br> <%= @t3.strftime("%:z") %>h</h2></th>
+                        <td> <h2> <%= @t3.strftime("%H:%M") %><br><%= dayIsIt %><%= modeSwitcher3 %> </h2></td>
+                    </tr>
+                </table>
                    
             </div>
 
