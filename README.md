@@ -1,3 +1,6 @@
+## Clock+ App
+Final project for Rapid App Development with 24hr deadline for completion from release.
+
 ## Building the rails App
 
 1. Run `docker-compose build` after every Gemfile change or to build the containers
