@@ -23,3 +23,7 @@
 7. `docker-compose run --rm web rails assets:precompile`
 8. `docker-compose run --rm web rails console`
 9. `docker-compose run --rm web rails test`
+
+
+## App Running on HEROKU 
+https://clock-rad.herokuapp.com/
